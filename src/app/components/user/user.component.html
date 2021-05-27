@@ -1,0 +1,14 @@
+<div class="container mt-5">
+
+    <div *ngIf="user" class="row animate__animated animate__bounce animate__fadeIn">
+        <div class="card m-auto">
+            <p class="m-auto"><strong>Name:</strong> {{user.name.first}} {{user.name.last}} </p>
+            <p class="m-auto"><strong>Gender:</strong> {{user.gender}} </p>
+            <p class="m-auto"><strong>Email:</strong> {{user.email}}</p>
+            <img  class="rounded m-auto" src="{{user.picture.large}}" alt="">
+        </div>
+        <div class="col-md-3">
+            <a class="btn btn-danger" routerLink="/">Back</a>
+        </div>
+    </div>
+</div>
